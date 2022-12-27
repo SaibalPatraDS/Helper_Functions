@@ -113,3 +113,8 @@ def plot_loss_curves(history):
   plt.title('Accuracy')
   plt.xlabel('Epochs')
   plt.legend();
+
+
+
+
+## Reading subfolders name from a Folder
