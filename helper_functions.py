@@ -117,4 +117,15 @@ def plot_loss_curves(history):
 
 
 
-## Reading subfolders name from a Folder
+# Reading subfolders name from a Folder
+
+import tensorflow as tf
+''''Make sure to mention the directory name'''
+
+def read_subfolder_name(data_dir):
+    commands = np.array(tf.io.gfile.listdir(str(data_dir)))
+    commands = commands[commands != 'README.md']
+    print('Commands:', commands)
+
+Commands = Commands.tolist()    
+'''This function will help to read the subfolder name from a folder'''    
